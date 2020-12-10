@@ -34,6 +34,10 @@ To make your KDE look like Windows 10 too, you'll some prerequisites first.
    
  -  [Win-8.1-NS](https://store.kde.org/p/1084938) (the shadowed variant
    isn't accurate, so it's not used.)
+   
+ -  [fish](https://www.archlinux.org/packages/community/x86_64/fish/) (for command line shell)
+ 
+ -  [kitty](https://www.archlinux.org/packages/community/x86_64/kitty/) (for terminal)
 
 ## Instructions
 For the taskbar, you'll need to make sure latte is started. Right click on the dock, and click "Configure Latte". Select "Layouts", click "Import", and find the "Explorer.layout.latte", and import it.
@@ -44,5 +48,7 @@ In Breeze10's configuration, set the font size to 9, and ensure title alignment 
 Copy FolderItemDelegate.qml to /usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/, copy notification.svg to ~/.local/share/plasma/desktoptheme/plasma-theme-modern10light-master/icons/, and copy ClockView.qml to ~/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/
 
 In Desktop Effects in System Settings, ensure the "Maximize" effect is disabled, and "Rubberband Maximized" is enabled. Set the Window Open/Close Animation to Glide.
+
+For a look-alike "Command Prompt", ensure you are using fish as your command line shell, and kitty as your terminal emulator, and copy the "fish" and "kitty" folders in this repository to ~/.config
 
 Finally, replace /etc/profile.d/freetype2.sh with the one included in this repo, and reboot for the font rendering to better match Windows.
