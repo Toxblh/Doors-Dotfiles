@@ -8,9 +8,6 @@ To make your KDE look like Windows 10 too, you'll some prerequisites first.
    assumption that you'll be using Arch Linux, so using another distro
    will break that assumption)
    
- -  [Infinality Remix](https://github.com/pdeljanov/infinality-remix/)
-   (to better match Windows font rendering)
-   
  -  [Latte Dock
    (git)](https://aur.archlinux.org/packages/latte-dock-git/) (the non
    git version may work too, haven't tested it)
@@ -47,3 +44,5 @@ In Breeze10's configuration, set the font size to 9, and ensure title alignment 
 Copy FolderItemDelegate.qml to /usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/, copy notification.svg to ~/.local/share/plasma/desktoptheme/plasma-theme-modern10light-master/icons/, and copy ClockView.qml to ~/.local/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/
 
 In Desktop Effects in System Settings, ensure the "Maximize" effect is disabled, and "Rubberband Maximized" is enabled. Set the Window Open/Close Animation to Glide.
+
+Finally, replace /etc/profile.d/freetype2.sh with the one included in this repo, and reboot for the font rendering to better match Windows.
