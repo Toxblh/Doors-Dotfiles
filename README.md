@@ -1,4 +1,4 @@
-
+![Preview of desktop](preview.png)
 # Doors
 
 To make your KDE look like Windows 10 too, you'll some prerequisites first.
